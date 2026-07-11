@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #06080d;
+  --bg2: #0a0f14;
+  --primary: #00ff7f;
+  --accent1: #ffa552;
+  --accent2: #5cc8ff;
+  --accent3: #ff5e9f;
+  --text: #e8eef9;
+  --muted: #7c8aab;
+  --dim: #3f4a64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  overflow: hidden; /* released by loading screen */
+  user-select: none;
+}
+
+::selection {
+  background: #00ff7f;
+  color: #06080d;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #222; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #444; }
+
+/* Marquee animations */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 30s linear infinite;
+}
+
+/* Tilt card */
+.tilt-card {
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.tilt-content {
+  transition: transform 0.1s ease-out;
+}
+
+/* Magnetic button */
+.magnetic-btn {
+  transition: transform 0.2s ease-out;
+}
+
+/* Ambient background */
+.ambient-base { background: var(--bg); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .animate-marquee { animation-duration: 20s; }
+  .animate-marquee-reverse { animation-duration: 25s; }
+}
+
+/* Font Awesome CDN fallback - we'll import in layout */
