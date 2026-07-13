@@ -3,26 +3,26 @@ import Link from "next/link"
 const projects = [
   {
     tag: "Web Development",
-    title: "Portfolio Website & Custom Domain",
-    desc: "This very site! Built with Next.js 16, deployed on Vercel with a custom domain (oaktreeservices.net) via DreamHost DNS configuration. Features interactive particles, 3D tilt effects, and a fully responsive design.",
-    tech: "Next.js · TypeScript · Tailwind CSS · Vercel · DreamHost DNS",
+    title: "Portfolio Website — Next.js 16",
+    desc: "Rebuilt from scratch in Next.js 16 with TypeScript and Tailwind CSS. Features interactive particle effects, 3D tilt cards, magnetic buttons, custom cursor, and a loading screen. Deployed on Vercel with automatic GitHub integration — every push deploys instantly.",
+    tech: "Next.js 16 · TypeScript · Tailwind CSS · Vercel · Git",
     links: [
       { href: "https://oaktreeservices.net", label: "🌐 View Live →" },
-      { href: "https://github.com/Oaktree96/portfolio", label: "</> Source Code" },
+      { href: "https://github.com/Oaktree96/portfolio-nextjs", label: "</> Source Code" },
     ],
+  },
+  {
+    tag: "DNS & Infrastructure",
+    title: "Custom Domain Migration to Vercel",
+    desc: "Migrated oaktreeservices.net from GitHub Pages to Vercel hosting. Configured DreamHost DNS with A record (76.76.21.21) and CNAME (cname.vercel-dns.com) for the www subdomain. Transitioned from the old HTML-based site to a modern Next.js stack.",
+    tech: "Vercel · DreamHost DNS · GitHub Pages · SSL/TLS",
+    links: [],
   },
   {
     tag: "Full-Stack Web App",
     title: "Skincare Booking Dashboard",
     desc: "A complete booking management system for a medical aesthetics business. Built with FastAPI and SQLite, managing services (facials, Botox, fillers), client bookings, and providing real-time business analytics with revenue tracking.",
     tech: "FastAPI · SQLite · HTML/CSS/JS · Pydantic · REST API",
-    links: [],
-  },
-  {
-    tag: "Infrastructure",
-    title: "Domain & DNS Configuration",
-    desc: "Purchased and configured oaktreeservices.net on DreamHost, pointing it to GitHub Pages and now Vercel. Set up 4 A records for the root domain, CNAME for www, MX records for email, and Google Workspace DNS records (SPF, DKIM, DMARC).",
-    tech: "DNS · DreamHost · Vercel · Google Workspace · Git",
     links: [],
   },
 ]

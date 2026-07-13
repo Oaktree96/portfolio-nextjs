@@ -26,14 +26,14 @@ export default function About() {
           <div className="relative mb-6 rounded-2xl border border-emerald-400/8 bg-white/[0.02] p-6 transition-colors duration-300 hover:border-emerald-400/25">
             <div className="absolute left-[-44px] top-8 h-3 w-3 rounded-full bg-emerald-400 shadow-[0_0_25px_#00ff7f]" />
             <h3 className="mb-1 text-xl font-bold text-emerald-400">Full-Stack Development</h3>
-            <h4 className="mb-3 text-[15px] font-medium text-[#5cc8ff]">Freelance & Portfolio Projects</h4>
-            <div className="mb-3 flex gap-4 text-xs text-[#3f4a64]">
-              <span>📍 Remote</span>
-              <span>📅 2025 — Present</span>
-            </div>
-            <p className="text-sm leading-[1.7] text-[#7c8aab]">
-              Building production-ready web applications and automation tools for small businesses. Developed a skincare booking dashboard with FastAPI and SQLite, automated marketing report generators, and data processing pipelines.
-            </p>
+                                <h4 className="mb-3 text-[15px] font-medium text-[#5cc8ff]">Freelance & Portfolio Projects</h4>
+                                <div className="mb-3 flex gap-4 text-xs text-[#3f4a64]">
+                                    <span>📍 Remote</span>
+                                    <span>📅 2025 — Present</span>
+                                </div>
+                                <p className="text-sm leading-[1.7] text-[#7c8aab]">
+                                    Building production-ready web applications with Next.js, FastAPI, and automation tools for small businesses. Rebuilt this portfolio in Next.js 16 with Vercel deployment and custom domain migration. Developed a skincare booking dashboard with FastAPI and SQLite for a medical aesthetics business.
+                                </p>
           </div>
 
           <div className="relative rounded-2xl border border-emerald-400/8 bg-white/[0.02] p-6 transition-colors duration-300 hover:border-emerald-400/25">

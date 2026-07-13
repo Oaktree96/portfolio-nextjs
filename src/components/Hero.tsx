@@ -134,7 +134,7 @@ export default function Hero() {
           <span className="bg-gradient-to-r from-[#ffa552] to-[#ff5e9f] bg-clip-text text-transparent">
             Python-Focused
           </span>{" "}
-          Software Engineer
+          Software Engineer &amp; Web Developer
         </div>
         <p className="mb-10 max-w-[550px] text-base leading-[1.7] text-[#7c8aab]">
           I build automation tools, data pipelines, and custom web applications that solve real business problems. Turning complex requirements into clean, working code.
@@ -156,7 +156,7 @@ export default function Hero() {
 
         <div className="mt-14 flex flex-col gap-5 border-t border-[rgba(232,238,249,0.06)] pt-10 sm:flex-row sm:gap-12">
           <div>
-            <div className="bg-gradient-to-r from-emerald-400 to-[#5cc8ff] bg-clip-text text-3xl font-extrabold text-transparent">3</div>
+            <div className="bg-gradient-to-r from-emerald-400 to-[#5cc8ff] bg-clip-text text-3xl font-extrabold text-transparent">4</div>
             <div className="mt-1 text-xs text-[#7c8aab]">Projects Built</div>
           </div>
           <div>
