@@ -8,6 +8,7 @@ import Hero from "@/components/Hero"
 import About from "@/components/About"
 import SkillsMarquee from "@/components/SkillsMarquee"
 import Services from "@/components/Services"
+import WhyMe from "@/components/WhyMe"
 import Projects from "@/components/Projects"
 import Contact from "@/components/Contact"
 import Footer from "@/components/Footer"
@@ -82,7 +83,7 @@ export default function Home() {
     )
 
     const els = document.querySelectorAll(
-      ".service-card, .project-card, .timeline-item, .hero-stat, .contact-block",
+      ".service-card, .project-card, .timeline-item, .hero-stat, .contact-block, .tilt-card",
     )
     els.forEach((el) => {
       const htmlEl = el as HTMLElement
@@ -113,6 +114,7 @@ export default function Home() {
       <About />
       <SkillsMarquee />
       <Services />
+      <WhyMe />
       <Projects />
       <Contact />
       <Footer />
