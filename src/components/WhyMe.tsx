@@ -1,34 +1,34 @@
 export default function WhyMe() {
   const points = [
     {
-      icon: "👤",
-      title: "Direct Communication",
-      desc: "When you hire Osborne Ops, you talk to the actual engineer — not an account manager, not a sales rep. No passing messages through people who don't write code.",
+      icon: "🤖",
+      title: "Agent-Powered Engineering",
+      desc: "You're not hiring one person. You're getting a private team of specialised AI agents working in parallel — coding, testing, deploying — directed by a senior engineer who owns the outcome.",
     },
     {
-      icon: "💰",
-      title: "Better Value",
-      desc: "No office rent, no sales team, no management overhead, no shareholder targets. You're paying for the work itself — not the infrastructure of a company.",
+      icon: "👤",
+      title: "Direct Communication",
+      desc: "When you work with Osborne Ops, you talk to the directing engineer — not an account manager, not a sales rep. No passing messages through layers of people who don't write code.",
     },
     {
       icon: "⚡",
-      title: "Fast Turnaround",
-      desc: "No project boards, no sprint planning marathons, no internal approval chains. A decision you make today is code I ship today. Simple.",
+      title: "Agency Speed, Direct Price",
+      desc: "No office rent, no sales team, no management overhead, no shareholder targets. You're paying for the work itself — delivered at agency speed by autonomous agents working 24/7.",
     },
     {
       icon: "🎯",
-      title: "Personal Investment",
-      desc: "Your project is my reputation. Every line of code has my name on it. Big agencies can afford to give you a junior and move on — I can't, and I won't.",
+      title: "Personal Accountability",
+      desc: "Every project has a senior engineer's name on it. A big agency can pass your work to a junior and move on. We can't, and we won't — our reputation is built on every line shipped.",
     },
     {
       icon: "🔄",
       title: "Total Flexibility",
-      desc: "Need to pivot mid-project? Change a requirement? With an agency that's a contract renegotiation. With me, it's a conversation and a commit.",
+      desc: "Need to pivot mid-project? Change a requirement? With an agency that's a contract renegotiation. With us, it's a conversation and a commit. Our agent team adapts instantly.",
     },
     {
       icon: "🏗️",
-      title: "Full-Stack Engineering",
-      desc: "You get someone who owns the whole stack — frontend, backend, infrastructure, CI/CD, DNS, deployment. Not a specialist in one piece, but someone who builds and ships the entire thing.",
+      title: "Full-Stack Delivery",
+      desc: "You get an outfit that owns the whole stack — frontend, backend, infrastructure, CI/CD, DNS, deployment. Not specialists in one piece, but a team that builds and ships the entire thing.",
     },
   ]
 
@@ -38,7 +38,7 @@ export default function WhyMe() {
       className="relative z-10 mx-auto w-[94%] max-w-[1200px] px-0 py-[100px]"
     >
       <p className="mb-2 text-xs font-semibold tracking-[2px] text-[#8898b0] uppercase">
-        Why Work With Me
+        Why Work With Osborne Ops
       </p>
       <h2 className="mb-4 text-[clamp(36px,5vw,56px)] font-extrabold tracking-[-1px]">
         Osborne Ops vs{" "}
@@ -47,9 +47,9 @@ export default function WhyMe() {
         </span>
       </h2>
       <p className="mb-12 max-w-[700px] text-[15px] leading-[1.7] text-[#8898b0]">
-        Big agencies sell process and promises. Independent engineers deliver results.
-        Here&apos;s what you actually get when you work directly with someone who builds
-        the software themselves.
+        Big agencies sell process and promises. Independent engineers are limited by one brain.
+        Osborne Ops combines human direction with autonomous agent execution — delivering
+        agency-quality results at a fraction of the time and cost.
       </p>
 
       <div className="mb-16 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -79,12 +79,13 @@ export default function WhyMe() {
           </div>
         </div>
         {[
-          ["Who you talk to", "The engineer", "A salesperson / account manager"],
-          ["Who writes your code", "The person you hired", "A junior you never meet"],
+          ["Who you talk to", "The directing engineer", "A salesperson / account manager"],
+          ["Who builds your software", "Private agent team", "A junior you never meet"],
+          ["Parallel work", "Multiple agents simultaneously", "One dev at a time"],
           ["Cost", "£30-50/hr (direct)", "£100-250/hr (overhead)"],
           ["Decision speed", "Today", "Next sprint (2 weeks)"],
           ["Scope changes", "A conversation", "A change order + fees"],
-          ["Accountability", "My name on the line", "The company's lawyer"],
+          ["Accountability", "Director's name on the line", "The company's lawyer"],
         ].map((row, i) => (
           <div
             key={i}

@@ -2,6 +2,9 @@
 
 import { useEffect, useRef } from "react"
 import Link from "next/link"
+import dynamic from "next/dynamic"
+
+const Scene3D = dynamic(() => import("@/components/Scene3D"), { ssr: false })
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -111,7 +114,8 @@ export default function Hero() {
         <canvas ref={canvasRef} className="h-full w-full" />
       </div>
 
-      <div className="relative z-10 max-w-[800px]">
+      <div className="flex w-full flex-col items-center gap-12 lg:flex-row lg:items-center lg:justify-between">
+        <div className="relative z-10 w-full max-w-[700px]">
         <p className="mb-4 text-xs font-semibold tracking-[2px] text-[#8898b0] uppercase">
           ✦ Software Engineering &amp; DevOps by Steven Osborne
         </p>
@@ -138,9 +142,9 @@ export default function Hero() {
           </span>
         </div>
         <p className="mb-10 max-w-[550px] text-base leading-[1.7] text-[#8898b0]">
-          I build software and the systems that deliver it. From full-stack web apps
+          We build software and the systems that deliver it. From full-stack web apps
           to deployment pipelines, cloud infrastructure to automation — you describe
-          what you need, I build it, and it stays running.
+          what you need, we build it, and it stays running.
         </p>
         <div className="flex flex-wrap gap-4">
           <Link
@@ -174,6 +178,12 @@ export default function Hero() {
             <div className="text-3xl font-extrabold text-white">Git</div>
             <div className="mt-1 text-xs text-[#8898b0]">Version Control</div>
           </div>
+        </div>
+      </div>
+
+        {/* 3D Scene — right side on desktop */}
+        <div className="relative z-10 hidden h-[400px] w-[400px] flex-shrink-0 lg:block xl:h-[500px] xl:w-[500px]">
+          <Scene3D />
         </div>
       </div>
     </section>

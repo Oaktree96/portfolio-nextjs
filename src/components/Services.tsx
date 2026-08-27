@@ -1,8 +1,8 @@
 export default function Services() {
   const services = [
-    { icon: "💻", title: "Custom Software", desc: "Full-stack web applications tailored to your business. Booking systems, client portals, admin dashboards, internal tools — built with Python and modern frameworks." },
+    { icon: "💻", title: "Custom Software", desc: "Full-stack web applications tailored to your business. Booking systems, client portals, admin dashboards, internal tools — built with Python and modern frameworks by an agent team that ships fast." },
     { icon: "🔄", title: "CI/CD Pipelines", desc: "Automated deployment pipelines that push your code from commit to production. GitHub Actions, Vercel, Docker — no more manual deploys or late-night releases." },
-    { icon: "☁️", title: "Cloud Infrastructure", desc: "Server setup, DNS configuration, SSL certificates, and deployment architecture. I handle the infrastructure so your app stays online and your team stays asleep." },
+    { icon: "☁️", title: "Cloud Infrastructure", desc: "Server setup, DNS configuration, SSL certificates, and deployment architecture. We handle the infrastructure so your app stays online and your team stays asleep." },
     { icon: "⚡", title: "Process Automation", desc: "Stop doing the same task manually. Scripts that automate file processing, report generation, email campaigns, data syncing — whatever's eating your team's time." },
     { icon: "📊", title: "Data Tools & Dashboards", desc: "Turn messy spreadsheets into clean, automated dashboards with real-time insights. Sales reports, inventory tracking, analytics — visual, interactive, always up to date." },
     { icon: "🔗", title: "API Integrations", desc: "Connect your apps together. Sync data between Slack, Google Sheets, email, Shopify, Notion, Telegram, and more — no more copy-pasting between platforms." },
