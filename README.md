@@ -20,7 +20,7 @@ Every push to `main` auto-deploys via Vercel's GitHub integration.
 
 ## Domain
 
-The site lives at **oaktreeservices.net** (DreamHost DNS → Vercel).
+The site lives at **osborneoperations.uk** and **oaktreeservices.net** (DreamHost DNS → Vercel).
 
 ## Stack
 

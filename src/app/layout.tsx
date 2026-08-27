@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Osborne Ops — Software Engineering & Development Operations",
     description:
       "Custom software and DevOps from Steven Osborne. Web apps, automation, CI/CD, cloud infrastructure — built to work, built to last.",
-    url: "https://oaktreeservices.net",
+    url: "https://osborneoperations.uk",
     siteName: "Osborne Ops",
     type: "website",
   },

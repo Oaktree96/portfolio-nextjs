@@ -11,10 +11,10 @@ const projects = [
   {
     tag: "DevOps & Infrastructure",
     title: "Custom Domain Deployment — Vercel + DNS",
-    desc: "Full CI/CD deployment pipeline with custom domain management. DreamHost DNS with A record and CNAME configuration, automated SSL/TLS via Vercel, continuous deployment from GitHub — every push deploys instantly. Production-grade setup for multiple projects.",
+    desc: "Full CI/CD deployment pipeline with custom domain management. DreamHost DNS with A record and CNAME configuration, automated SSL/TLS via Vercel, continuous deployment from GitHub — every push deploys instantly. Production-grade setup for osborneoperations.uk and oaktreeservices.net.",
     tech: "Vercel · DreamHost DNS · GitHub Actions · SSL/TLS",
     links: [
-      { href: "https://oaktreeservices.net", label: "🌐 View Live →" },
+      { href: "https://osborneoperations.uk", label: "🌐 View Live →" },
     ],
   },
   {
