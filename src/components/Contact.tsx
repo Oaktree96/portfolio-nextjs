@@ -9,7 +9,7 @@ export default function Contact() {
           Let&apos;s Build <span className="text-[#c8d6e5]">Something</span>
         </h2>
         <p className="mx-auto mb-8 max-w-[500px] text-[15px] text-[#8898b0]">
-          Have a project, an idea, or a problem that needs software? Let&apos;s talk about what I can build for you.
+          Have a project, an idea, or a problem that needs software? Let&apos;s talk about what we can build for you.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link
@@ -25,18 +25,12 @@ export default function Contact() {
           >
             <i className="fas fa-envelope" /> Email
           </a>
-          <Link
-            href="https://github.com/Oaktree96"
+          <a
+            href="https://instagram.com/osborne.ops"
             target="_blank"
             className="inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-3 text-sm font-medium text-[#f0f4f8] no-underline transition-all duration-300 hover:border-white hover:bg-white/5"
           >
-            <i className="fab fa-upwork" /> Upwork
-          </Link>
-          <a
-            href="mailto:osbornedev@proton.me"
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-3 text-sm font-medium text-[#f0f4f8] no-underline transition-all duration-300 hover:border-white hover:bg-white/5"
-          >
-            <i className="fab fa-telegram" /> Telegram
+            <i className="fab fa-instagram" /> Instagram
           </a>
         </div>
         <p className="mx-auto mt-6 text-xs text-[#8898b0]">Osborne Ops — Steven Osborne · From the UK · Available worldwide</p>
