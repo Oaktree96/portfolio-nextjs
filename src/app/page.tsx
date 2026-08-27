@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect } from "react"
 import LoadingScreen from "@/components/LoadingScreen"
 import CustomCursor from "@/components/CustomCursor"
 import Nav from "@/components/Nav"
@@ -101,12 +101,12 @@ export default function Home() {
       <LoadingScreen />
       <CustomCursor />
 
-      {/* Ambient Background */}
+      {/* Ambient Background — navy tones */}
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
         <div className="ambient-base absolute inset-0" />
-        <div className="absolute left-[30%] top-[55%] h-[60vmax] w-[60vmax] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(closest-side,rgba(255,165,66,0.27),transparent_70%)]" />
-        <div className="absolute left-[75%] top-[35%] h-[55vmax] w-[55vmax] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(closest-side,rgba(255,94,159,0.21),transparent_70%)]" />
-        <div className="absolute left-[20%] top-[30%] h-[55vmax] w-[55vmax] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(closest-side,rgba(92,200,255,0.17),transparent_70%)]" />
+        <div className="absolute left-[25%] top-[50%] h-[60vmax] w-[60vmax] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(closest-side,rgba(255,255,255,0.05),transparent_70%)]" />
+        <div className="absolute left-[70%] top-[30%] h-[55vmax] w-[55vmax] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(closest-side,rgba(26,45,74,0.4),transparent_70%)]" />
+        <div className="absolute left-[50%] top-[75%] h-[55vmax] w-[55vmax] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(closest-side,rgba(35,58,92,0.3),transparent_70%)]" />
       </div>
 
       <Nav />

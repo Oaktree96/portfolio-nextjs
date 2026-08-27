@@ -5,7 +5,6 @@ import Link from "next/link"
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const gradientRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -13,7 +12,7 @@ export default function Hero() {
     const ctx = canvas.getContext("2d")
     if (!ctx) return
 
-    let particles: {
+    const particles: {
       x: number; y: number; vx: number; vy: number
       size: number; alpha: number
     }[] = []
@@ -70,7 +69,7 @@ export default function Hero() {
 
         ctx!.beginPath()
         ctx!.arc(p.x, p.y, p.size, 0, Math.PI * 2)
-        ctx!.fillStyle = `rgba(0, 255, 127, ${p.alpha})`
+        ctx!.fillStyle = `rgba(255, 255, 255, ${p.alpha})`
         ctx!.fill()
       }
 
@@ -84,7 +83,7 @@ export default function Hero() {
             ctx!.beginPath()
             ctx!.moveTo(particles[i].x, particles[i].y)
             ctx!.lineTo(particles[j].x, particles[j].y)
-            ctx!.strokeStyle = `rgba(0, 255, 127, ${0.06 * (1 - dist / 150)})`
+            ctx!.strokeStyle = `rgba(255, 255, 255, ${0.06 * (1 - dist / 150)})`
             ctx!.lineWidth = 0.5
             ctx!.stroke()
           }
@@ -107,69 +106,73 @@ export default function Hero() {
       id="home"
       className="relative z-10 mx-auto flex min-h-screen w-[94%] max-w-[1200px] items-center px-0 py-[120px]"
     >
-      {/* Follow gradient */}
-      <div
-        ref={gradientRef}
-        className="pointer-events-none absolute h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-400/8 mix-blend-screen"
-        style={{ transition: "left 0.3s ease-out, top 0.3s ease-out" }}
-      />
-
       {/* Particles canvas */}
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
         <canvas ref={canvasRef} className="h-full w-full" />
       </div>
 
       <div className="relative z-10 max-w-[800px]">
-        <p className="mb-4 text-xs font-semibold tracking-[2px] text-emerald-400 uppercase">
-          ✦ Available for freelance
+        <p className="mb-4 text-xs font-semibold tracking-[2px] text-[#8898b0] uppercase">
+          ✦ Software Engineering &amp; DevOps by Steven Osborne
         </p>
         <h1 className="mb-6 text-[clamp(48px,7vw,96px)] font-extrabold leading-[1.1] tracking-[-2px]">
-          Hi, I&apos;m{" "}
-          <span className="bg-gradient-to-r from-emerald-400 to-[#5cc8ff] bg-clip-text text-transparent">
-            Steven James<br />Colin Osborne
+          <span className="text-white">
+            Osborne Ops
           </span>
         </h1>
         <div className="mb-8 text-[clamp(18px,2.5vw,36px)] font-bold tracking-[-0.5px]">
-          A{" "}
-          <span className="bg-gradient-to-r from-[#ffa552] to-[#ff5e9f] bg-clip-text text-transparent">
-            Python-Focused
-          </span>{" "}
-          Software Engineer &amp; Web Developer
+          <span className="text-[#c8d6e5]">
+            Software
+          </span>
+          {" "}&middot;{" "}
+          <span className="text-[#c8d6e5]">
+            DevOps
+          </span>
+          {" "}&middot;{" "}
+          <span className="text-[#c8d6e5]">
+            Automation
+          </span>
+          {" "}&middot;{" "}
+          <span className="text-[#c8d6e5]">
+            Infrastructure
+          </span>
         </div>
-        <p className="mb-10 max-w-[550px] text-base leading-[1.7] text-[#7c8aab]">
-          I build automation tools, data pipelines, and custom web applications that solve real business problems. Turning complex requirements into clean, working code.
+        <p className="mb-10 max-w-[550px] text-base leading-[1.7] text-[#8898b0]">
+          I build software and the systems that deliver it. From full-stack web apps
+          to deployment pipelines, cloud infrastructure to automation — you describe
+          what you need, I build it, and it stays running.
         </p>
         <div className="flex flex-wrap gap-4">
           <Link
             href="#contact"
-            className="magnetic-btn inline-flex items-center gap-2 rounded-full bg-emerald-400 px-8 py-3.5 text-sm font-bold text-[#06080d] transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(0,255,127,0.25)]"
+            className="magnetic-btn inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-bold text-[#0a1628] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(255,255,255,0.15)]"
           >
-            📩 Hire Me
+            📩 Get Started
           </Link>
           <a
             href="#projects"
-            className="magnetic-btn inline-flex items-center gap-2 rounded-full border border-[rgba(232,238,249,0.15)] px-8 py-3.5 text-sm font-medium text-[#e8eef9] transition-colors duration-300 hover:border-emerald-400"
+            className="magnetic-btn inline-flex items-center gap-2 rounded-full border border-[rgba(255,255,255,0.15)] px-8 py-3.5 text-sm font-medium text-[#f0f4f8] transition-colors duration-300 hover:border-white hover:bg-white/5"
           >
             ↓ View My Work
           </a>
         </div>
 
-        <div className="mt-14 flex flex-col gap-5 border-t border-[rgba(232,238,249,0.06)] pt-10 sm:flex-row sm:gap-12">
+        <div className="mt-14 flex flex-col gap-5 border-t border-[rgba(255,255,255,0.06)] pt-10 sm:flex-row sm:gap-12">
           <div>
-            <div className="bg-gradient-to-r from-emerald-400 to-[#5cc8ff] bg-clip-text text-3xl font-extrabold text-transparent">4</div>
-            <div className="mt-1 text-xs text-[#7c8aab]">Projects Built</div>
+            <div className="text-3xl font-extrabold text-white">4+</div>
+            <div className="mt-1 text-xs text-[#8898b0]">Projects Built</div>
           </div>
           <div>
-            <div className="bg-gradient-to-r from-emerald-400 to-[#5cc8ff] bg-clip-text text-3xl font-extrabold text-transparent">Live</div>
-            <div className="mt-1 text-xs text-[#7c8aab]">Custom Domain</div>
+            <div className="text-3xl font-extrabold text-white">Live</div>
+            <div className="mt-1 text-xs text-[#8898b0]">In Production</div>
           </div>
           <div>
-            <div className="bg-gradient-to-r from-emerald-400 to-[#5cc8ff] bg-clip-text text-3xl font-extrabold text-transparent">FastAPI</div>
-            <div className="mt-1 text-xs text-[#7c8aab]">Backend Framework</div>
+            <div className="text-3xl font-extrabold text-white">DevOps</div>
+            <div className="mt-1 text-xs text-[#8898b0]">Pipeline Focus</div>
           </div>
           <div>
-            <div className="bg-gradient-to-r from-emerald-400 to-[#5cc8ff] bg-clip-text text-3xl font-extrabold text-transparent">Git</div>
-            <div className="mt-1 text-xs text-[#7c8aab]">Version Control</div>
+            <div className="text-3xl font-extrabold text-white">Git</div>
+            <div className="mt-1 text-xs text-[#8898b0]">Version Control</div>
           </div>
         </div>
       </div>

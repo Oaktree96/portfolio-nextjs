@@ -13,30 +13,36 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Steven James Colin Osborne — Python Developer & Automation Expert",
+  title: "Osborne Ops — Software Engineering & Development Operations",
   description:
-    "Python-focused software engineer building automation tools, data pipelines, and custom web applications. Available for freelance.",
+    "Steven Osborne delivers custom software and DevOps — web apps, automation, CI/CD, cloud infrastructure, and full-stack systems for your business. No fluff, just working code.",
   keywords: [
+    "DevOps",
+    "software engineer",
     "Python developer",
     "automation",
-    "web development",
+    "CI/CD",
+    "cloud infrastructure",
     "FastAPI",
     "freelance",
     "UK developer",
+    "web development",
+    "full-stack",
+    "Osborne Ops",
   ],
   openGraph: {
-    title: "Steven James Colin Osborne — Python Developer",
+    title: "Osborne Ops — Software Engineering & Development Operations",
     description:
-      "Python-focused software engineer building automation tools, data pipelines, and custom web applications.",
+      "Custom software and DevOps from Steven Osborne. Web apps, automation, CI/CD, cloud infrastructure — built to work, built to last.",
     url: "https://oaktreeservices.net",
-    siteName: "Steven Osborne Portfolio",
+    siteName: "Osborne Ops",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Steven James Colin Osborne — Python Developer",
+    title: "Osborne Ops — Software Engineering & Development Operations",
     description:
-      "Python-focused software engineer building automation tools, data pipelines, and custom web applications.",
+      "Custom software and DevOps from Steven Osborne. Web apps, automation, CI/CD, cloud infrastructure — built to work, built to last.",
   },
   robots: {
     index: true,

@@ -33,24 +33,24 @@ export default function LoadingScreen() {
   return (
     <div
       onClick={handleClick}
-      className="fixed inset-0 z-[999999999] flex cursor-pointer flex-col items-center justify-center bg-[#06080d] transition-opacity duration-800"
+      className="fixed inset-0 z-[999999999] flex cursor-pointer flex-col items-center justify-center bg-[#0a1628] transition-opacity duration-800"
     >
-      <div className="mb-6 h-3.5 w-3.5 rounded-full bg-emerald-400 shadow-[0_0_24px_#00ff7f,0_0_4px_#00ff7f,inset_0_0_6px_rgba(255,255,255,0.3)]" />
-      <div className="mb-2 text-[15px] font-medium tracking-[0.28em] text-[#e8eef9]">
-        STEVEN JAMES COLIN OSBORNE <span className="text-[#3f4a64]">·</span> PORTFOLIO
+      <div className="mb-6 h-3.5 w-3.5 rounded-full bg-white shadow-[0_0_24px_rgba(255,255,255,0.3),0_0_4px_rgba(255,255,255,0.5),inset_0_0_6px_rgba(255,255,255,0.3)]" />
+      <div className="mb-2 text-[15px] font-medium tracking-[0.28em] text-[#f0f4f8]">
+        STEVEN JAMES COLIN OSBORNE <span className="text-[#8898b0]">·</span> OSBORNE OPS
       </div>
-      <div className="mb-6 text-[11px] tracking-[0.1em] text-[#7c8aab]">setting up the studio…</div>
-      <div className="mb-3 h-0.5 w-[300px] overflow-hidden rounded-full bg-[#1e2840]">
+      <div className="mb-6 text-[11px] tracking-[0.1em] text-[#8898b0]">setting up the studio…</div>
+      <div className="mb-3 h-0.5 w-[300px] overflow-hidden rounded-full bg-[#1a2d4a]">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-emerald-400 to-[#5cc8ff] shadow-[0_0_8px_#00ff7f] transition-[width] duration-[0.1s]"
+          className="h-full rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.3)] transition-[width] duration-[0.1s]"
           style={{ width: `${Math.floor(pct)}%` }}
         />
       </div>
-      <div className="mb-7 font-mono text-[10px] text-[#3f4a64]">
+      <div className="mb-7 font-mono text-[10px] text-[#8898b0]">
         {String(Math.floor(pct)).padStart(2, "0")}%
       </div>
       <div
-        className={`text-xs uppercase tracking-[0.32em] text-[rgba(232,238,249,0.4)] transition-opacity duration-600 ${
+        className={`text-xs uppercase tracking-[0.32em] text-[rgba(255,255,255,0.4)] transition-opacity duration-600 ${
           showContinue ? "opacity-100" : "opacity-0"
         }`}
       >

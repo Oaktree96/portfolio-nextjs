@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #06080d;
-  --bg2: #0a0f14;
-  --primary: #00ff7f;
-  --accent1: #ffa552;
-  --accent2: #5cc8ff;
-  --accent3: #ff5e9f;
-  --text: #e8eef9;
-  --muted: #7c8aab;
-  --dim: #3f4a64;
+  --navy: #0a1628;
+  --navy2: #0f1d35;
+  --navy3: #1a2d4a;
+  --navy4: #233a5c;
+  --white: #f0f4f8;
+  --white2: #c8d6e5;
+  --white3: #8898b0;
+  --black: #06080d;
+  --border: rgba(255,255,255,0.06);
+  --border-hover: rgba(255,255,255,0.12);
 }
 
 * {
@@ -24,23 +25,23 @@ html {
 
 body {
   font-family: "Geist", system-ui, -apple-system, sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  background: var(--navy);
+  color: var(--white);
   overflow-x: hidden;
   overflow: hidden; /* released by loading screen */
   user-select: none;
 }
 
 ::selection {
-  background: #00ff7f;
-  color: #06080d;
+  background: var(--navy4);
+  color: var(--white);
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: #222; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #444; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--navy3); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--navy4); }
 
 /* Marquee animations */
 @keyframes marquee {
@@ -78,12 +79,10 @@ body {
 }
 
 /* Ambient background */
-.ambient-base { background: var(--bg); }
+.ambient-base { background: var(--navy); }
 
 /* Responsive */
 @media (max-width: 768px) {
   .animate-marquee { animation-duration: 20s; }
   .animate-marquee-reverse { animation-duration: 25s; }
 }
-
-/* Font Awesome CDN fallback - we'll import in layout */
