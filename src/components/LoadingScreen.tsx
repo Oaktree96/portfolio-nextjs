@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect, useCallback } from "react"
+import Logo3D from "@/components/Logo3D"
 
 export default function LoadingScreen() {
   const [pct, setPct] = useState(0)
@@ -35,11 +36,15 @@ export default function LoadingScreen() {
       onClick={handleClick}
       className="fixed inset-0 z-[999999999] flex cursor-pointer flex-col items-center justify-center bg-[#0a1628] transition-opacity duration-800"
     >
-      <div className="mb-6 h-3.5 w-3.5 rounded-full bg-white shadow-[0_0_24px_rgba(255,255,255,0.3),0_0_4px_rgba(255,255,255,0.5),inset_0_0_6px_rgba(255,255,255,0.3)]" />
+      {/* 3D Rotating Logo */}
+      <Logo3D />
+
       <div className="mb-2 text-[15px] font-medium tracking-[0.28em] text-[#f0f4f8]">
-        STEVEN JAMES COLIN OSBORNE <span className="text-[#8898b0]">·</span> OSBORNE OPS
+        OSBORNE OPERATIONS
       </div>
-      <div className="mb-6 text-[11px] tracking-[0.1em] text-[#8898b0]">setting up the studio…</div>
+      <div className="mb-6 text-[11px] tracking-[0.1em] text-[#8898b0]">
+        setting up the studio&hellip;
+      </div>
       <div className="mb-3 h-0.5 w-[300px] overflow-hidden rounded-full bg-[#1a2d4a]">
         <div
           className="h-full rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.3)] transition-[width] duration-[0.1s]"
